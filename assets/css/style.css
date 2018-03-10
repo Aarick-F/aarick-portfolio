@@ -123,19 +123,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', end
   line-height: 1.5em;
 }
 
-#portfolio {
+#portfolioSection {
   width: 100%;
   flex: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*flex-wrap: wrap;*/
+  flex-wrap: wrap;
 }
 
 .portfolioItem {
   width: 30%;
-  height: 30%;
-  background-image: url("assets/images/saboteur.PNG");
+}
+
+.portfolioItem:hover {
+  box-shadow: 0px 2px 0px #FFF;
+  transform: translateY(-5px);
+  transition: 0.3s;
+}
+
+.portfolioItem img {
+  width: 100%;
+}
+
+.label {
+  color: #FFF;
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  padding: 10px 0;
+  background: #F22;
 }
 
 .leftBorder {
@@ -230,6 +246,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#212121', end
   }
   #brand {
     font-size: 2em;
+  }
+  .portfolioItem {
+    width: 100%;
+    margin: 20px 0;
+  }
+  #portfolio {
+    height: 100%;
   }
 }
 
